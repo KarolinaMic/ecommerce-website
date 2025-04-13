@@ -1,6 +1,6 @@
 import React from "react";
-import footerLogo from "../assets/logo.png";
-import Banner from "../assets/footer-pattern.jpg";
+import footerLogo from "../assets/logo4.png";
+
 import {
   FaFacebook,
   FaInstagram,
@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 
 const BannerImg = {
-  backgroundImage: `url(${Banner})`,
+ /* backgroundImage: `url(${Banner})`,*/
   backgroundPosition: "bottom",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
@@ -39,17 +39,17 @@ const FooterLinks = [
 
 const Footer = () => {
   return (
-    <div style={BannerImg} className="text-white">
+    <div style={BannerImg} className="text-white bg-[#bdbdbd] dark:bg-black">
       <div className="container">
         <div data-aos="zoom-in" className="grid md:grid-cols-3 pb-44 pt-5">
           {/* company details */}
           <div className="py-8 px-4">
-            <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3">
-              <img src={footerLogo} alt="" className="max-w-[50px]" />
-              Ecommerce shop
+            <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3 text-[#ff5f15]">
+              <img src={footerLogo} alt="" className="max-w-[50px] text-white" />
+              Wearly
             </h1>
             <p>
-              Text
+            Wearly is an online clothing store offering a wide range of high-quality apparel for men, women, and children. Each piece in our collection is crafted with attention to detail and designed to provide comfort, durability, and style. Whether you're looking for casual wear, elegant outfits, or trendy accessories, we have something for every occasion. At Wearly, we prioritize the use of premium fabrics to ensure that every item not only looks great but feels exceptional. Our collection is made to last, making it the perfect choice for fashion-conscious individuals and families who value quality and timeless designs.
             </p>
           </div>
 
@@ -63,7 +63,7 @@ const Footer = () => {
                 <ul className="flex flex-col gap-3">
                   {FooterLinks.map((link) => (
                     <li
-                      className="cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-gray-200"
+                      className="cursor-pointer hover:text-[#ff5f15] hover:translate-x-1 duration-300 text-gray-200"
                       key={link.title}
                     >
                       <span>{link.title}</span>
@@ -73,7 +73,7 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <div className="py-8 px-4">
+              {/*<div className="py-8 px-4">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
                   Links
                 </h1>
@@ -87,7 +87,7 @@ const Footer = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div>*/}
             </div>
 
             {/* social links */}
@@ -105,13 +105,16 @@ const Footer = () => {
                 </a>
               </div>
               <div className="mt-6">
-                <div className="flex items-center gap-3">
+                <div className="flex items-right gap-3">
                   <FaLocationArrow />
-                  <p>Address</p>
+                  <p>Wearly London Branch<br/>
+                    123 Fashion Street<br/>
+                    London, W1B 2QZ<br/>
+                    United Kingdom</p>
                 </div>
-                <div className="flex items-center gap-3 mt-3">
+                <div className="flex items-right gap-3 mt-3">
                   <FaMobileAlt />
-                  <p>Phone</p>
+                  <p>+44 20 7946 0850</p>
                 </div>
               </div>
             </div>

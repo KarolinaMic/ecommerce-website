@@ -1,5 +1,5 @@
 import React from "react";
-import Image1 from "../assets/women.png";
+import Image1 from "../assets/women.jpg";
 import Image2 from "../assets/shopping.png";
 import Image3 from "../assets/sale.png";
 import Slider from "react-slick";
@@ -8,23 +8,23 @@ const ImageList = [
   {
     id: 1,
     img: Image1,
-    title: "Promo",
+    title: "Spring Into Style – 50% Off Women’s Fashion!",
     description:
-      "Promo Description",
+      "Refresh your wardrobe with our exclusive spring sale! Enjoy 50% off on all women’s clothing – from light jackets to floral dresses. Step into the new season looking and feeling your best. Hurry, limited time only!",
   },
   {
     id: 2,
-    img: Image2,
-    title: "Promo",
+    img: Image1,
+    title: "New Men's Collection Has Arrived!",
     description:
-      "Promo Description",
+      "Discover the latest trends in men’s fashion – sleek styles, modern fits, and must-have pieces for the season. Elevate your look with our brand-new arrivals!",
   },
   {
     id: 3,
-    img: Image3,
-    title: "Promo",
+    img: Image1,
+    title: "Shop With Purpose – Support Children's Education",
     description:
-      "Promo Description",
+      "A portion of every purchase goes toward funding education for children in need. Together, we can make a difference – one order at a time.",
   },
 ];
 
@@ -45,7 +45,7 @@ const Hero = ({ handleOrderPopup }) => {
   return (
     <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 ">
       {/* background pattern */}
-     {/* <div className="h-[700px] w-[700px] bg-primary/40 absolute -top-1/2 right-0 rounded-3xl rotate-45 -z[8]"></div>*/}
+  <div className="h-[700px] w-[700px] bg-[#ffbb9c] absolute -top-1/2 right-0 rounded-3xl rotate-45 -z[8]"></div>
       {/* hero section */}
       <div className="container pb-8 sm:pb-0">
         <Slider {...settings}>
@@ -77,7 +77,7 @@ const Hero = ({ handleOrderPopup }) => {
                   >
                     <button
                       onClick={handleOrderPopup}
-                      className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
+                      className="bg-[#FBBF20] hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
                     >
                       Order Now
                     </button>

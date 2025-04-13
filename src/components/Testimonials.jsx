@@ -1,30 +1,34 @@
 import React from "react";
 import Slider from "react-slick";
+import Test1 from "../assets/test1.jpg";
+import Test2 from "../assets/test2.jpg";
+import Test3 from "../assets/test3.jpg";
+import Test4 from "../assets/test4.jpg";
 
 const TestimonialData = [
   {
     id: 1,
     name: "Jack Black",
-    text: "Opinion",
-    img: "",
+    text: "I recently bought a pair of shoes from this online store, and I couldn't be happier! The quality is outstanding, and they fit perfectly. The design is modern yet classic, which makes them suitable for both casual and semi-formal occasions. I highly recommend this store to anyone looking for stylish and durable footwear!",
+    img: Test1,
   },
   {
     id: 2,
-    name: "Jack Black",
-    text: "Opinion",
-    img: "",
+    name: "Ellie Ortega",
+    text: "I purchased a dress from this store, and I am in love with it! The fabric feels so soft and luxurious, and the fit is perfect. I wore it to a special event, and I received so many compliments. I will definitely be shopping here again for more dresses!",
+    img: Test2,
   },
   {
     id: 3,
-    name: "Jack Black",
-    text: "Opinion",
-    img: "",
+    name: "Charlie Willow",
+    text: "This shirt is absolutely amazing! The material is so comfortable and breathable, and it has a beautiful fit. I love how versatile it is – I can wear it to work or dress it down for the weekend. The quality exceeded my expectations, and I’m already eyeing a few other items from their collection.",
+    img: Test3,
   },
   {
     id: 5,
-    name: "SJack Black",
-    text: "Opinion",
-    img: "3",
+    name: "Denise Richard",
+    text: "I bought a pair of pants from this store, and I’m so impressed! They fit like a glove and are incredibly comfortable. The material is high-quality and stretches just enough to move with me. These pants are my new go-to, and I’m definitely coming back to get more in different colors!",
+    img: Test4,
   },
 ];
 
@@ -73,13 +77,13 @@ const Testimonials = () => {
         {/* header section */}
         <div className="text-center mb-10 max-w-[600px] mx-auto">
           <p data-aos="fade-up" className="text-sm text-primary">
-            What our customers are saying
+
           </p>
           <h1 data-aos="fade-up" className="text-3xl font-bold">
             Testimonials
           </h1>
           <p data-aos="fade-up" className="text-xs text-gray-400">
-            Text
+
           </p>
         </div>
 
@@ -101,13 +105,13 @@ const Testimonials = () => {
                   </div>
                   <div className="flex flex-col items-center gap-4">
                     <div className="space-y-3">
-                    <p className="text-xs" style={{ color: "#ff6655" }}>{data.text}</p>
+                    <p className="text-xs" style={{ color: "#000000" }}>{data.text}</p>
                       <h1 className="text-xl font-bold text-black/80 dark:text-light">
                         {data.name}
                       </h1>
                     </div>
                   </div>
-                  <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">
+                  <p className="text-[#ff5f15] text-9xl font-serif absolute top-0 right-0">
                     ,,
                   </p>
                 </div>
