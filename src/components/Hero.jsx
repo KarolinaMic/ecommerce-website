@@ -1,7 +1,7 @@
 import React from "react";
-import Image1 from "../assets/women.jpg";
-import Image2 from "../assets/shopping.png";
-import Image3 from "../assets/sale.png";
+import Image1 from "../assets/grafika1.png";
+import Image2 from "../assets/grafika2.png";
+import Image3 from "../assets/grafika3.png";
 import Slider from "react-slick";
 
 const ImageList = [
@@ -14,14 +14,14 @@ const ImageList = [
   },
   {
     id: 2,
-    img: Image1,
+    img: Image2,
     title: "New Men's Collection Has Arrived!",
     description:
       "Discover the latest trends in men’s fashion – sleek styles, modern fits, and must-have pieces for the season. Elevate your look with our brand-new arrivals!",
   },
   {
     id: 3,
-    img: Image1,
+    img: Image3,
     title: "Shop With Purpose – Support Children's Education",
     description:
       "A portion of every purchase goes toward funding education for children in need. Together, we can make a difference – one order at a time.",
@@ -45,7 +45,7 @@ const Hero = ({ handleOrderPopup }) => {
   return (
     <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 ">
       {/* background pattern */}
-  <div className="h-[700px] w-[700px] bg-[#ffbb9c] absolute -top-1/2 right-0 rounded-3xl rotate-45 -z[8]"></div>
+  <div className="h-[700px] w-[700px] bg-[#ffab85] dark:bg-[#4b4b4b] absolute -top-1/2 right-0 rounded-3xl rotate-45 -z[8]"></div>
       {/* hero section */}
       <div className="container pb-8 sm:pb-0">
         <Slider {...settings}>
@@ -77,24 +77,24 @@ const Hero = ({ handleOrderPopup }) => {
                   >
                     <button
                       onClick={handleOrderPopup}
-                      className="bg-[#FBBF20] hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
+                      className="bg-[#FBBF20] dark:bg-[#343691] hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
                     >
                       Order Now
                     </button>
                   </div>
                 </div>
                 {/* image section */}
-                <div className="order-1 sm:order-2">
-                  <div
-                    data-aos="zoom-in"
-                    data-aos-once="true"
-                    className="relative z-10"
-                  >
-                    <img
-                      src={data.img}
-                      alt=""
-                      className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-105 lg:scale-120 object-contain mx-auto"
-                    />
+<div className="order-1 sm:order-2">
+  <div
+    data-aos="zoom-in"
+    data-aos-once="true"
+    className="relative z-10 m-0 p-0"
+  >
+    <img
+      src={data.img}
+      alt=""
+      className="w-full max-w-[600px] h-auto sm:max-w-[700px] sm:h-[700px] object-contain mx-auto"
+    />
                   </div>
                 </div>
               </div>

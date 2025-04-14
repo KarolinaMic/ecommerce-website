@@ -92,12 +92,12 @@ const Products = () => {
               </div>
             ))}
           </div>
-          {/* view all button */}
+          {/* view all button 
           <div className="flex justify-center">
-            <button className="text-center mt-10 cursor-pointer bg-[#ff5f15] text-white py-1 px-5 rounded-lg">
+            <button className="text-center mt-10 cursor-pointer bg-[#ff5f15] dark:bg-[#343691] text-white py-1 px-5 rounded-lg">
               View all
             </button>
-          </div>
+          </div>*/}
         </div>
       </div>
     </div>

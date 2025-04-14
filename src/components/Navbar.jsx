@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../assets/logo.png";
+import LogoDark from "../assets/logo2.png";
 import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaCaretDown } from "react-icons/fa";
@@ -59,7 +60,16 @@ const Navbar = ({ handleOrderPopup }) => {
         <div className="container flex justify-between items-center">
           <div>
             <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
-            <img src={Logo} alt="Logo" className="w-8 h-8 object-contain" />
+                        <img
+                          src={Logo}
+                          alt="Logo"
+                          className="w-8 h-8 object-contain dark:hidden"
+                        />
+                        <img
+                          src={LogoDark}
+                          alt="Logo Dark"
+                          className="w-8 h-8 object-contain hidden dark:block"
+                        />
               Wearly
             </a>
           </div>
@@ -78,7 +88,7 @@ const Navbar = ({ handleOrderPopup }) => {
             {/* order button */}
             <button
               onClick={() => handleOrderPopup()}
-              className="bg-gradient-to-r bg-[#ff5f15] to-secondary transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group"
+              className="bg-gradient-to-r bg-[#ff5f15] dark:bg-[#343691] to-secondary transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group"
             >
               <span className="group-hover:block hidden transition-all duration-200">
                 Order

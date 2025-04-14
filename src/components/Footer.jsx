@@ -1,5 +1,6 @@
 import React from "react";
-import footerLogo from "../assets/logo4.png";
+import footerLogoLight from "../assets/logo4.png";
+import footerLogoDark from "../assets/logo6.png";
 
 import {
   FaFacebook,
@@ -44,8 +45,17 @@ const Footer = () => {
         <div data-aos="zoom-in" className="grid md:grid-cols-3 pb-44 pt-5">
           {/* company details */}
           <div className="py-8 px-4">
-            <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3 text-[#ff5f15]">
-              <img src={footerLogo} alt="" className="max-w-[50px] text-white" />
+            <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3 text-[#ff5f15] dark:text-[#343691]">
+            <img
+              src={footerLogoLight}
+              alt="Logo"
+              className="max-w-[50px] dark:hidden"
+            />
+            <img
+              src={footerLogoDark}
+              alt="Logo Dark"
+              className="max-w-[50px] hidden dark:block"
+            />
               Wearly
             </h1>
             <p>
@@ -63,7 +73,7 @@ const Footer = () => {
                 <ul className="flex flex-col gap-3">
                   {FooterLinks.map((link) => (
                     <li
-                      className="cursor-pointer hover:text-[#ff5f15] hover:translate-x-1 duration-300 text-gray-200"
+                      className="cursor-pointer hover:text-[#343691] hover:translate-x-1 duration-300 text-gray-200"
                       key={link.title}
                     >
                       <span>{link.title}</span>
