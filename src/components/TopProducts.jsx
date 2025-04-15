@@ -27,27 +27,25 @@ const ProductsData = [
       "Step into elegance with refined shoes that complete any sophisticated outfit.",
   },
 ];
+
 const TopProducts = ({ handleOrderPopup }) => {
   return (
     <div>
       <div className="container">
         {/* Header section */}
         <div className="text-center mb-24">
-          <p data-aos="fade-up" className="text-sm text-primary">
-          </p>
+          <p data-aos="fade-up" className="text-sm text-primary"></p>
           <h1 data-aos="fade-up" className="text-3xl font-bold">
-            New Best Products <br/>
+            New Best Products <br />
           </h1>
-          <p data-aos="fade-up" className="text-xs text-gray-400">
-
-          </p>
+          <p data-aos="fade-up" className="text-xs text-gray-400"></p>
         </div>
         {/* Body section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center">
           {ProductsData.map((data) => (
             <div
               data-aos="zoom-in"
-              className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[300px]"
+              className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[300px] mb-8 sm:mb-0" 
             >
               {/* image section */}
               <div className="h-[100px]">

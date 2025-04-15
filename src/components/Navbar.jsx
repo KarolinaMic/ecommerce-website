@@ -10,27 +10,27 @@ const Menu = [
   {
     id: 1,
     name: "Home",
-    link: "/#",
+    link: "/#home",
   },
   {
     id: 2,
     name: "Womens Wear",
-    link: "/#services",
+    link: "/#women",
   },
   {
     id: 3,
     name: "Mens Wear",
-    link: "/#",
+    link: "/#men",
   },
   {
     id: 3,
     name: "Kids Wear",
-    link: "/#",
+    link: "/kids",
   },
   {
     id: 3,
     name: "Accessories",
-    link: "/#",
+    link: "/accessories",
   },
 ];
 
