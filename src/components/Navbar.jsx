@@ -14,8 +14,8 @@ const Menu = [
   },
   {
     id: 2,
-    name: "Womens Wear",
-    link: "/#women",
+    name: "Top Products",
+    link: "/#top-products",
   },
   {
     id: 3,
