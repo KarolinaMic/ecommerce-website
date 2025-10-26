@@ -24,13 +24,13 @@ const Menu = [
   },
   {
     id: 3,
-    name: "Kids Wear",
-    link: "/#kids",
+    name: "About Us",
+    link: "/#about-us",
   },
   {
     id: 3,
-    name: "Accessories",
-    link: "/#accessories",
+    name: "Testimonials",
+    link: "/#atestimonials",
   },
 ];
 
