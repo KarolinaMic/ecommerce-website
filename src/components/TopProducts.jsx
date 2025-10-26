@@ -30,7 +30,7 @@ const ProductsData = [
 
 const TopProducts = ({ handleOrderPopup }) => {
   return (
-    <div id="top-products">
+    <div id="new-best-products">
       <div className="container">
         {/* Header section */}
         <div className="text-center mb-24">
