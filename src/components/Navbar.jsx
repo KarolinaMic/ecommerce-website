@@ -30,7 +30,7 @@ const Menu = [
   {
     id: 3,
     name: "Testimonials",
-    link: "/#atestimonials",
+    link: "/#testimonials",
   },
 ];
 
