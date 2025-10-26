@@ -3,7 +3,6 @@ import Logo from "../assets/logo.png";
 import LogoDark from "../assets/logo2.png";
 import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
-import { FaCaretDown } from "react-icons/fa";
 import DarkMode from "./DarkMode";
 
 const Menu = [
@@ -23,32 +22,14 @@ const Menu = [
     link: "/#new-best-products",
   },
   {
-    id: 3,
+    id: 4,
     name: "About Us",
     link: "/#about-us",
   },
   {
-    id: 3,
+    id: 5,
     name: "Testimonials",
     link: "/#testimonials",
-  },
-];
-
-const DropdownLinks = [
-  {
-    id: 1,
-    name: "Trending Products",
-    link: "/#",
-  },
-  {
-    id: 2,
-    name: "Best Selling",
-    link: "/#",
-  },
-  {
-    id: 3,
-    name: "Top Rated",
-    link: "/#",
   },
 ];
 
@@ -60,16 +41,16 @@ const Navbar = ({ handleOrderPopup }) => {
         <div className="container flex justify-between items-center">
           <div>
             <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
-                        <img
-                          src={Logo}
-                          alt="Logo"
-                          className="w-8 h-8 object-contain dark:hidden"
-                        />
-                        <img
-                          src={LogoDark}
-                          alt="Logo Dark"
-                          className="w-8 h-8 object-contain hidden dark:block"
-                        />
+              <img
+                src={Logo}
+                alt="Logo"
+                className="w-8 h-8 object-contain dark:hidden"
+              />
+              <img
+                src={LogoDark}
+                alt="Logo Dark"
+                className="w-8 h-8 object-contain hidden dark:block"
+              />
               Wearly
             </a>
           </div>
@@ -80,7 +61,7 @@ const Navbar = ({ handleOrderPopup }) => {
               <input
                 type="text"
                 placeholder="search"
-                className="w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary dark:border-gray-500 dark:bg-gray-800  "
+                className="w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary dark:border-gray-500 dark:bg-gray-800"
               />
               <IoMdSearch className="text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3" />
             </div>
@@ -88,7 +69,7 @@ const Navbar = ({ handleOrderPopup }) => {
             {/* order button */}
             <button
               onClick={() => handleOrderPopup()}
-              className="bg-gradient-to-r bg-[#ff5f15] dark:bg-[#343691] to-secondary transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group"
+              className="bg-gradient-to-r bg-[#ff5f15] dark:bg-[#343691] to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group"
             >
               <span className="group-hover:block hidden transition-all duration-200">
                 Order
@@ -103,6 +84,7 @@ const Navbar = ({ handleOrderPopup }) => {
           </div>
         </div>
       </div>
+
       {/* lower Navbar */}
       <div data-aos="zoom-in" className="flex justify-center">
         <ul className="sm:flex hidden items-center gap-4">
@@ -116,29 +98,7 @@ const Navbar = ({ handleOrderPopup }) => {
               </a>
             </li>
           ))}
-          {/* Simple Dropdown and Links 
-          <li className="group relative cursor-pointer">
-            <a href="#" className="flex items-center gap-[2px] py-2">
-              Trending Products
-              <span>
-                <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
-              </span>
-            </a>
-            <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white p-2 text-black shadow-md">
-              <ul>
-                {DropdownLinks.map((data) => (
-                  <li key={data.id}>
-                    <a
-                      href={data.link}
-                      className="inline-block w-full rounded-md p-2 hover:bg-primary/20 "
-                    >
-                      {data.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </li>*/}
+          {/* Sekcja "Trending Products" ukryta */}
         </ul>
       </div>
     </div>
