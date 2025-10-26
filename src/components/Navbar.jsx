@@ -25,12 +25,12 @@ const Menu = [
   {
     id: 3,
     name: "Kids Wear",
-    link: "/kids",
+    link: "/#kids",
   },
   {
     id: 3,
     name: "Accessories",
-    link: "/accessories",
+    link: "/#accessories",
   },
 ];
 
