@@ -116,7 +116,7 @@ const Navbar = ({ handleOrderPopup }) => {
               </a>
             </li>
           ))}
-          {/* Simple Dropdown and Links */}
+          {/* Simple Dropdown and Links 
           <li className="group relative cursor-pointer">
             <a href="#" className="flex items-center gap-[2px] py-2">
               Trending Products
@@ -138,7 +138,7 @@ const Navbar = ({ handleOrderPopup }) => {
                 ))}
               </ul>
             </div>
-          </li>
+          </li>*/}
         </ul>
       </div>
     </div>
